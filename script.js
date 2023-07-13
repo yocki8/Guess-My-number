@@ -57,9 +57,9 @@ document.querySelector('.guess').addEventListener
         else{
             
             
-            if(guessed > random-2 && guessed<random+2) message('🫣 Too close');
+            if(guessed >= random-2 && guessed<=random+2) message('🫣 Too close');
             
-            else if(guessed>random-5 && guessed<random+5)
+            else if(guessed>=random-5 && guessed<=random+5)
             message('😙 Not Too far');
             
             else message('🫠 Too far');
