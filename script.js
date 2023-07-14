@@ -1,7 +1,7 @@
 'use strict';
 
 let randomise = () =>{
-    return Math.trunc(Math.random()*20)+1;
+    random = Math.trunc(Math.random()*20)+1;
 }
 let message = (notice) =>{
     document.querySelector('.notice').textContent=notice;
@@ -25,9 +25,10 @@ let getHighscore = () =>{
     return Number(document.querySelector('.highscore').textContent);
 }
 
+let random;
 let flag=true;
 let score = 20;
-let random = randomise();
+randomise();
 document.querySelector('.guess').addEventListener
 ('click',()=>{
 
